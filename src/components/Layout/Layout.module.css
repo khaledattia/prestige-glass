@@ -1,0 +1,78 @@
+.page_title {
+    height: 301px;
+    position: relative;
+}
+
+
+
+
+.page_title h2 {
+    font-size: 65px;
+    position: absolute;
+    bottom: 71px;
+    right: 80px;
+    color: #fff;
+    text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25);
+    user-select: none;
+}
+
+.page_title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: linear-gradient(
+    -90deg, 
+    rgba(0,0,0,1), 
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.50), 
+    rgba(0,0,0,0.25), 
+    rgba(0,0,0,0));
+    
+}
+
+
+/* services */
+.page_title .services svg {
+    width: 3.245em;
+    height: 1.140em;
+
+    font-size: 4.063rem;
+}
+
+
+
+/* width="228" height="73" */
+/* contacts */
+.page_title .contacts svg {
+    width: 3.5em;
+    height: 1.12em;
+
+    font-size: 4.063rem;
+}
+
+
+
+/* width="291" height="76"  */
+/* about */
+.page_title .about svg {
+    width: 4.47em;
+    height: 1.16em;
+
+    font-size: 4.063rem;
+}
+
+
+/* width="342" height="82"  */
+/* gallery */
+.page_title .gallery svg {
+    width: 5.26em;
+    height: 1.26em;
+
+    font-size: 4.063rem;
+}
+
+

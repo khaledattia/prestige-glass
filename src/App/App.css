@@ -1,0 +1,51 @@
+
+:root {
+    --decorate-stroke: 8px
+}
+
+
+.decorate_relative {
+    position: relative;
+
+}
+
+
+.top_decoration::after {
+    content: '';
+    height: 1px;
+    width: var(--decorate-stroke);
+    position: absolute;
+    right: 100%;
+    top: -1px;
+    background-color: var(--golden);
+}
+
+.top_decoration::before {
+    content: '';
+    height: var(--decorate-stroke);
+    width: 1px;
+    position: absolute;
+    left: -1px;
+    bottom: 100%;
+    background-color: var(--golden);
+}
+
+.bottom_decoration::after {
+    content: '';
+    height: 1px;
+    width: var(--decorate-stroke);
+    position: absolute;
+    left: 100%;
+    bottom: -1px;
+    background-color: var(--golden);
+}
+
+.bottom_decoration::before {
+    content: '';
+    height: var(--decorate-stroke);
+    width: 1px;
+    position: absolute;
+    right: -1px;
+    top: 100%;
+    background-color: var(--golden);
+}
