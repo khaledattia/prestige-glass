@@ -25,12 +25,12 @@ export const Brief = () => {
             </div>
 
             <div className = { social }>
-                <a href='/#'>
+                <a href='https://wa.me/+201119133344'>
                 
                     <BsWhatsapp />
                 </a>
 
-                <a href='/#'>
+                <a href='https://www.facebook.com/PrestigeGlassPE'>
                     <BsFacebook />
                 </a>
             </div>
