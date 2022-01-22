@@ -60,6 +60,7 @@ export const Carousel = () => {
                 return 0;
             })
         }
+        
         const counter = setInterval( () => handlenextActiveSlide( length ), animateDuration );
         
         return () => {
@@ -71,11 +72,12 @@ export const Carousel = () => {
     //  handle carousel changes
     useEffect(() => {
         const listItems = document.querySelectorAll(`.${ carousel } .${ carousel_item }`);
-        const activeItem = document.querySelector(`.${ active }`);
 
+        
         // remove pervious active item;
-        if( activeItem !== null ) activeItem.classList.remove(`${ active }`);
-
+        listItems.forEach(el => {
+            if(el.classList.contains(`${active}`)) el.classList.remove(`${ active }`);
+        })
 
         listItems[current].classList.add(`${ active }`);
 
