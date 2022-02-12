@@ -22,7 +22,7 @@ export const AsideSocial = () => {
 
 
                 <div className = { social_Icon }>
-                    <a href='https://www.facebook.com/PrestigeGlassPE'>
+                    <a href='https://instagram.com/prestige_glass.pe?r=nametag'>
                         <BsInstagram />
                     </a>
                 </div>
