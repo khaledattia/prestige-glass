@@ -16,8 +16,10 @@
   --black: rgb(13,13,13);
   --dark: rgb(35,35,35);
   --darker: rgb(24,24,24);
-  --golden: rgb(203,161,53);
-  --light-golden: rgb(255,204,51);
+  /* --golden: rgb(203,161,53); */
+  --golden: rgb(255, 102, 0);
+  --light-golden: rgb(255, 102, 0);
+  /* --light-golden: rgb(255,204,51); */
   --text-2: rgb(196,196,196);
   --text-1: rgb(93,93,93);
   --border: rgb(196,196,196);
@@ -39,10 +41,11 @@ html, body,
 ul {
   list-style: none;
 }
-
+a{
+  color: #000;
+}
 a, a:hover {
   text-decoration: none;
-  color: #000;
 }
 
 body {

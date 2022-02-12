@@ -1,5 +1,5 @@
 import styles from './AsideSocial.module.css';
-import { BsWhatsapp, BsFacebook } from 'react-icons/bs';
+import { BsWhatsapp, BsFacebook, BsInstagram } from 'react-icons/bs';
 
 export const AsideSocial = () => {
 
@@ -17,6 +17,13 @@ export const AsideSocial = () => {
                 <div className = { social_Icon }>
                     <a href='https://www.facebook.com/PrestigeGlassPE'>
                         <BsFacebook />
+                    </a>
+                </div>
+
+
+                <div className = { social_Icon }>
+                    <a href='https://www.facebook.com/PrestigeGlassPE'>
+                        <BsInstagram />
                     </a>
                 </div>
         </div>

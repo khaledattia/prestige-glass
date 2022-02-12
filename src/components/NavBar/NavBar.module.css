@@ -104,6 +104,10 @@
     color: var(--text-1);
 }
 
+.hyphen {
+    margin: 0 0.385rem;
+}
+
 .contact span:last-child {
     margin-left: 0.378rem;
     font-size: 0.945rem;
@@ -111,7 +115,8 @@
 }
 
 .contacts .contact:last-child {
-    margin-left: 0.882rem;
+    /* margin-left: 0.882rem;
+    margin-bottom: 0.756rem; */
 }
 
 .links {

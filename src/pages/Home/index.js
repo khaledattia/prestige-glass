@@ -10,7 +10,7 @@ import { GiMirrorMirror } from 'react-icons/gi';
 import { BsStopwatch,
     BsShield,
     BsPatchCheck,
-    BsDoorOpen,
+    BsShop,
     BsBarChartSteps } from 'react-icons/bs'
 
 
@@ -50,7 +50,7 @@ export const Home = () => {
 
             icon_03      = { <BsPatchCheck /> } 
             icon03Head   = { "جودة" } 
-            icon03Text   = { "الاكسسوارات لدينا من أجود أنواع الاستانلس ستيل 304 الغير قابل للصدأ" } 
+            icon03Text   = { " الاكسسوارات لدينا من أجود أنواع الاستانلس ستيل 304 فرنساوى الغير قابل للصدأ او الكسر" } 
 
             buttonHref   = {"/about-us" }
             buttonText = { "تعرف  علينا" }
@@ -65,21 +65,21 @@ export const Home = () => {
                 `
                     سواء كنت تبني ( منزلك - عملك ) الجديد أو تعيد تصميمه، يمكن أن تساعدك
                     برستيج جلاس في إنشاء مرايات جديدة وإحاطة الدش أو حوض الاستحمام بالزجاج كما يمكننا 
-                    مساعددتك فى عمل الدرابزين بالـ(الزجاج - الاستانلستيل - زجاج واستانلستيل)
+                    مساعددتك فى عمل الهاندريل بالـ(الزجاج - الاستانلس ستيل - زجاج وستانلس ستيل)
                 `
             } 
             icon_01      = { <BsBarChartSteps /> } 
-            icon01Head   = { "درابزين" } 
-            icon01Text   = { `استانلستيل فقط أو زجاج فقط أو 
-                            زجاج واستانلستيل` }
+            icon01Head   = { "هاندريل" } 
+            icon01Text   = { `ستانلس ستيل فقط أو زجاج فقط أو 
+                            زجاج و ستانلس ستيل` }
 
             icon_02      = { <GiMirrorMirror /> } 
             icon02Head   = { "مرايات" } 
-            icon02Text   = { "موضيئه وغير موضيئه" } 
+            icon02Text   = { "عادى - تاتش ليد - عادى ليد" } 
 
-            icon_03      = { <BsDoorOpen /> } 
-            icon03Head   = { "أبواب" } 
-            icon03Text   = { "أبواب بالنظامين المفصلي والجرار." } 
+            icon_03      = { <BsShop /> } 
+            icon03Head   = { "واجهات" } 
+            icon03Text   = { "محلات - شركات - مكاتب - عيادات - صيدليات" } 
 
             buttonHref   = {"/services" }
             buttonText = { "المزيد" }

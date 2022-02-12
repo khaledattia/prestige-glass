@@ -13,9 +13,9 @@ export const ScrollToTop = () => {
         onClick={() => window.scrollTo(0, 0)}>
           <Button 
           color = {"#fff"}
-          backgroundColor = "#CBA135"
+          backgroundColor = "rgb(255, 102, 0)"
           text = {<BsChevronUp style = {{fontSize:  "24px"}} />}
-          borderColor = {"#CBA135"}
+          borderColor = {"rgb(255, 102, 0)"}
           />
         </div>
     );

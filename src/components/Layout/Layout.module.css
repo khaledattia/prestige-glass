@@ -76,3 +76,9 @@
 }
 
 
+@media (max-width: 578px) {
+    .page_title h2 {
+        right: 25px;
+        font-size: 54px;
+    }
+}

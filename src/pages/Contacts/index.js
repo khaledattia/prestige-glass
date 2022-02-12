@@ -30,7 +30,9 @@ export const ContactsInfo = () => {
         container, 
         line,
         map_wrapper, 
-        contacts
+        contacts,
+        contact_wrapper,
+        span
     } = styles;
 
     return (
@@ -45,22 +47,37 @@ export const ContactsInfo = () => {
 
             <div className = { line } />
 
-            <div className={ contacts }>
+            <div className = { contacts }>
 
-                <Contact 
-                label = { "العنوان" } 
-                contentText = {"محور جمال عبد الناصر - فيصل، الجيزة"}
-                icon = { <BsPinMapFill /> } />
+                <div className = { contact_wrapper }>
+                    <Contact 
+                    label = { "العنوان" } 
+                    icon  = { <BsPinMapFill /> } />
+                    <div className = { span }>محور جمال عبد الناصر - فيصل، الجيزة</div>
+                    <div className = { span }>شارع اللبينى فيصل الجيزة</div>
+                </div>
 
-                <Contact 
-                label = { "البريد الالكترونى" } 
-                contentText = {<a href="mailto:info@prestigeglass-eg.com">info@prestigeglass-eg.com</a>}
-                icon = { <BsEnvelope /> } />
+                <div className = { contact_wrapper }>
+                    <Contact 
+                    label = { "البريد الالكترونى" } 
+                    icon = { <BsEnvelope /> } />
+                    <div className = { span }>
+                        <a href="mailto:info@prestigeglass-eg.com">info@prestigeglass-eg.com</a>
+                    </div>
+                </div>
 
-                <Contact 
-                label = { "رقم التليفون" } 
-                contentText = {<a href='tel:+201119133344'>+20-111-913-3344</a>}
-                icon = { <BsPhone /> } />
+
+                <div className = { contact_wrapper }>
+                    <Contact 
+                    label = { "رقم التليفون" } 
+                    icon = { <BsPhone /> } />
+                    <div className = { span }>
+                        <a href='tel:+201119133344'>+20-111-913-3344</a>
+                    </div>
+                    <div className = { span }>
+                        <a href='tel:+201118399949'>+20-111-839-9949</a>
+                    </div>
+                </div>
 
             </div>
 

@@ -26,7 +26,8 @@ export const NavBar = () => {
         active,
         links,
         show_menu,
-        animate
+        animate, 
+        hyphen
     } = styles;
     const { pathname } = useLocation();
     
@@ -72,12 +73,9 @@ export const NavBar = () => {
                 <div className = { contacts }>
                     
                     <div className = { contact } >
-                        <p>محور جمال عبد الناصر - فيصل، الجيزة </p><p>&nbsp;8</p>
-                        <span className = { icon }>
-                            <BsPinMapFill />
-                        </span>
+                        <a href='tel:+201118399949'>+20-111-839-9949</a>
                     </div>
-                    
+                     <span className = { hyphen }>-</span>
                     <div className = { contact } >
                         <p>
                             <a href='tel:+201119133344'>+20-111-913-3344</a>

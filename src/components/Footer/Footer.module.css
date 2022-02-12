@@ -39,6 +39,8 @@ footer {
 
 }
 
+
+
 .contact_name span:first-child {
     cursor: default;
     user-select: none;
@@ -58,7 +60,7 @@ footer {
 }
 
 
-.link {
+.link, .addressII {
     color: var(--text-2);
     display: flex;
     align-items: center;
@@ -105,6 +107,7 @@ footer {
 .brief .intro {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 
 }
 
@@ -132,6 +135,7 @@ footer {
     width: 100px;
     margin-left: 0.875rem;
     margin-bottom: 0.875rem;
+    height: 78px;
 }
 
 .__logo img {
@@ -147,6 +151,7 @@ footer {
 .brief .social a {
     font-size: 1.563rem;
     color: var(--text-2);
+    margin-left: 0.75rem;
 
     transition: color 350ms ease;
     -webkit-transition: color 350ms ease;
@@ -155,8 +160,8 @@ footer {
     -o-transition: color 350ms ease;
 }
 
-.brief .social a:last-child {
-    margin-left: 0.75rem;
+.brief .social a:first-child {
+    margin-left: 0;
 }
 
 .brief .social a:hover {

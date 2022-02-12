@@ -13,7 +13,7 @@ export const Cards = () => {
     return (
         <div className = { row } >
             <div className = { col }>
-                <Card tapText = "درابزين" src = { stairs  } />
+                <Card tapText = "هاندريل" src = { stairs  } />
             </div>
 
             <div className = { col }>

@@ -1,6 +1,6 @@
 
-import logo from '@assets/logo.png';
-import { BsWhatsapp, BsFacebook } from 'react-icons/bs';
+import logo from '@assets/whitelogo.png';
+import { BsWhatsapp, BsFacebook, BsInstagram } from 'react-icons/bs';
 import styles from '../Footer.module.css';
 
 
@@ -32,6 +32,12 @@ export const Brief = () => {
 
                 <a href='https://www.facebook.com/PrestigeGlassPE'>
                     <BsFacebook />
+                </a>
+
+                
+
+                <a href='https://www.facebook.com/PrestigeGlassPE'>
+                    <BsInstagram />
                 </a>
             </div>
         </div>

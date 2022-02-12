@@ -4,12 +4,19 @@ import { BsPhone, BsEnvelope, BsFillPinMapFill } from 'react-icons/bs';
 // return contacts 
 export const Contacts = () => {
 
-    const {  contacts } = styles;
+    const { contacts, addressII, link } = styles;
 
 
     return (
         <div className = { contacts }>
             <h5>اتصل بنا</h5>
+
+            <Contact
+            name = { 'البريد الالكترونى' }
+            icon = { <BsEnvelope /> }
+            text = { 'info@prestigeglass-eg.com' }
+            href = { "mailto: info@prestigeglass-eg.com" }
+            />
 
             <Contact
                 name = { 'موبيل' }
@@ -19,16 +26,19 @@ export const Contacts = () => {
             />
 
             <Contact
-                name = { 'البريد الالكترونى' }
-                icon = { <BsEnvelope /> }
-                text = { 'info@prestigeglass-eg.com' }
-                href = { "mailto: info@prestigeglass-eg.com" }
+                text = { "+20-111-839-9949"}
+                href = { "tel:+201118399949" }
             />
 
             <Contact
                 name = { 'العنوان' }
                 icon = { <BsFillPinMapFill /> }
                 text = { <span>محور جمال عبد الناصر - فيصل، الجيزة <span>8</span></span>}
+                href = { "/#" }
+            />
+
+            <Contact
+                text = { <span>شارع اللبينى فيصل الجيزة</span>}
                 href = { "/#" }
             />
         </div>
@@ -46,15 +56,16 @@ const Contact = ( props ) => {
 
         <div className = { link_wrapper }>
 
-            <div className = { contact_name }>
+            {
+                (name && icon) && <div className = { contact_name }>
 
-                <span> { name } </span>
-                <span className = { ic }>
-                    { icon }
-                </span>
+                    <span> { name } </span>
+                        <span className = { ic }>
+                        { icon }
+                    </span>
 
-            </div>
-
+                </div>
+            }
             <a href = { href } className = { link }> { text } </a>
         </div>
     );
