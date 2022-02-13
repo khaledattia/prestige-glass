@@ -17,7 +17,7 @@ const Gallery = () => {
             <div className = { galley_container } >
 
             <div  className = { row } >
-                {imgs(216, Img )}
+                { imgs(216, Img ) }
             </div>
 
         </div>
