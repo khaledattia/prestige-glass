@@ -1,6 +1,5 @@
 import { SubPage } from '@components/Layout/Layout';
 import styles from './Gallery.module.css';
-// import { imgs } from './imgs';
 
 
 
