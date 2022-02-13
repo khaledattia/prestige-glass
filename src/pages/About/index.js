@@ -1,6 +1,6 @@
 import styles from './About.module.css';
 import { SubPage } from '@components/Layout/Layout';
-import img_001 from '@assets/imgs/about/001.jpg';
+import img_001 from '@assets/imgs/about/_001.png';
 import { ContactsInfo } from '../Contacts';
 
 const About = () => {
@@ -37,7 +37,7 @@ const About = () => {
 
                         <br /><br />
                         
-                    <div style={{textAlign: "right"}}>:بعض عملائنا</div>
+                    <div style={{ textAlign: "right" }}>:بعض عملائنا</div>
                         البنك العربى الافريقى -
                         البنك الاهلى المصرى -
                         سيراميكا كليوباترا -

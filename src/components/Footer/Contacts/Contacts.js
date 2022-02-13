@@ -33,13 +33,13 @@ export const Contacts = () => {
             <Contact
                 name = { 'العنوان' }
                 icon = { <BsFillPinMapFill /> }
-                text = { <span>محور جمال عبد الناصر - فيصل، الجيزة <span>8</span></span>}
-                href = { "/#" }
+                text = { <span style={{display: "flex"}}>محور جمال عبد الناصر - فيصل، الجيزة <span style={{marginLeft: "0.25rem"}}>34</span></span>}
+                href = { "https://www.google.com/maps?ll=30.018997,31.192131&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=5753353574757392182" }
             />
 
             <Contact
                 text = { <span>شارع اللبينى فيصل الجيزة</span>}
-                href = { "/#" }
+                href = { "https://www.google.com/maps/place/30%C2%B000'18.4%22N+31%C2%B008'12.5%22E/@30.005106,31.1346292,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x6019032ef20967aa!8m2!3d30.005106!4d31.1368179?hl=en" }
             />
         </div>
     );

@@ -63,7 +63,7 @@
     text-align: right;
 }
 
-.card span {
+.card .icon {
     margin-bottom: 6px;
     color: var(--golden);
     font-size: 25px;

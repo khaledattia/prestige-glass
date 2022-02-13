@@ -31,7 +31,8 @@ export const WhyUs = ({
         wrapper, 
         right, 
         left, 
-        brief 
+        brief,
+        icon
     } = styles;
 
     return (
@@ -55,7 +56,7 @@ export const WhyUs = ({
                 <div className = { cards }>
 
                     <div className = { card }>
-                        <span>
+                        <span className = { icon }>
                             { icon_01 }    
                         </span>
 
@@ -69,7 +70,7 @@ export const WhyUs = ({
                     </div>
 
                     <div className = { `${ card } decorate_relative top_decoration` }  >
-                        <span className='bottom_decoration'>
+                        <span className = {`bottom_decoration ${ icon }`}>
                             { icon_02 }    
                         </span>
 
@@ -83,7 +84,7 @@ export const WhyUs = ({
                     </div>
 
                     <div className = { card }  >
-                        <span>
+                        <span className = { icon }>
                             { icon_03 }    
                         </span>
 

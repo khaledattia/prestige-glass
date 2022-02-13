@@ -22,7 +22,7 @@
 
 .context p {
     max-width: 500px;
-    text-align: justify;
+    text-align: right;
     font-size: 0.875rem;
     font-weight: 400;
 }

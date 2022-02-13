@@ -5,7 +5,7 @@ import { Responsibilities } from './Responsibilities/Responsibilities';
 import { WhyUs } from './WhyUs/WhyUs';
 import { Duty } from './Duty/Duty';
 import { Gallery } from './Gallery/Gallery';
-// import styles from './Home.module.css';
+import styles from './Home.module.css';
 import { GiMirrorMirror } from 'react-icons/gi'; 
 import { BsStopwatch,
     BsShield,
@@ -16,7 +16,7 @@ import { BsStopwatch,
 
 export const Home = () => {
 
-    // const { home } = styles
+    const { quality } = styles
 
     return (
 
@@ -47,10 +47,10 @@ export const Home = () => {
             icon_02      = { <BsShield /> } 
             icon02Head   = { "أمان" } 
             icon02Text   = { "محكم الغلق والتركيب يحتفظ بالحرارة ومع ضمان عدم تسريب المياه." } 
-
+            
             icon_03      = { <BsPatchCheck /> } 
             icon03Head   = { "جودة" } 
-            icon03Text   = { " الاكسسوارات لدينا من أجود أنواع الاستانلس ستيل 304 فرنساوى الغير قابل للصدأ او الكسر" } 
+            icon03Text   = { <span className = { quality }>الاكسسوارات لدينا من أجود أنواع الاستانلس ستيل <span className='numb'>304</span> فرنساوى الغير قابل للصدأ او الكسر</span> } 
 
             buttonHref   = {"/about-us" }
             buttonText = { "تعرف  علينا" }

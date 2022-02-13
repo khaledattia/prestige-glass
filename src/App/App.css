@@ -49,3 +49,8 @@
     top: 100%;
     background-color: var(--golden);
 }
+
+
+.numb {
+    font-family: var(--cairo);
+}

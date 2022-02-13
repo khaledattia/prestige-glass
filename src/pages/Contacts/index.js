@@ -53,8 +53,16 @@ export const ContactsInfo = () => {
                     <Contact 
                     label = { "العنوان" } 
                     icon  = { <BsPinMapFill /> } />
-                    <div className = { span }>محور جمال عبد الناصر - فيصل، الجيزة</div>
-                    <div className = { span }>شارع اللبينى فيصل الجيزة</div>
+                    <div className = { span }>
+                        <a style={{display: "flex"}} href='https://www.google.com/maps?ll=30.018997,31.192131&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=5753353574757392182'>
+                            محور جمال عبد الناصر - فيصل، الجيزة <span style={{marginLeft: "0.25rem"}}>34</span>
+                        </a>
+                    </div>
+                    <div className = { span }>
+                        <a href={`https://www.google.com/maps/place/30%C2%B000'18.4%22N+31%C2%B008'12.5%22E/@30.005106,31.1346292,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x6019032ef20967aa!8m2!3d30.005106!4d31.1368179?hl=en`}>
+                            شارع اللبينى فيصل الجيزة
+                        </a>
+                    </div>
                 </div>
 
                 <div className = { contact_wrapper }>

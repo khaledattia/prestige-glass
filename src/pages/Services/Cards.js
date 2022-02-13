@@ -1,8 +1,9 @@
 
-import shower_box from '@assets/imgs/services/shower-box.jpg';
-import door from '@assets/imgs/services/door.jpg';
-import mirror from '@assets/imgs/services/mirror.jpg';
-import stairs from '@assets/imgs/services/stairs.jpg';
+import shower_box from '@assets/imgs/services/shower-box.png';
+import door from '@assets/imgs/services/door.png';
+import mirror from '@assets/imgs/services/mirror.png';
+import stairs from '@assets/imgs/services/stairs.png';
+import face from '@assets/imgs/services/face.png';
 
 import styles from './Services.module.css';
 
@@ -12,6 +13,7 @@ export const Cards = () => {
     const { row, col } = styles;
     return (
         <div className = { row } >
+
             <div className = { col }>
                 <Card tapText = "هاندريل" src = { stairs  } />
             </div>
@@ -32,7 +34,7 @@ export const Cards = () => {
             </div>
 
             <div className = { col }>
-                {/* <Card tapText = "" src = {} /> */}
+                <Card tapText = "واجهات" src = { face  } />
             </div>
 
         </div>
