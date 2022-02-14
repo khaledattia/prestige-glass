@@ -1,0 +1,44 @@
+.model { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000000;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+
+}
+
+.img_container {
+    height: 95%;
+    width: 576px;
+    margin: 0 15px;
+}
+
+.img_container img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn_close {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2.25rem;
+}
+
+
+@media (max-width: 576px) {
+    .img_container {
+        position: relative;
+        width: 95%;
+    }
+}

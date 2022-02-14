@@ -1,56 +1,51 @@
+import { useState } from 'react';
 import { SubPage } from '@components/Layout/Layout';
+import { Model } from '@components/Model/Model';
+import { map } from '@utils/helpers/map';
+
 import styles from './Gallery.module.css';
-
-
+import { Img } from './Img';
 
 const Gallery = () => {
+    const [status, setStatus] = useState("close");
+    const [src, setSrc] = useState("");
+
     const {
         galley_container,
         row,
         header_background
     } = styles;
     
+
     return (
         <>
-        <SubPage pageTitle = "معرض الصور" className = { header_background } />
+            {
+                status === "open" ? 
+                <Model 
+                set       = { setSrc }
+                status    = { status } 
+                setStatus = { setStatus } 
+                src       = { src } /> 
+                : <></>
+            }
+        
+            <SubPage pageTitle = "معرض الصور" className = { header_background } />
 
             <div className = { galley_container } >
+                <div  className = { row } >
 
-            <div  className = { row } >
-                { imgs(216, Img ) }
+                    { map(216, ( link, i ) => (
+                        <Img 
+                        key       = { i } 
+                        link      = { link } 
+                        set       = { setSrc } 
+                        setStatus = { setStatus } />
+                    ))}
+
+                </div>
             </div>
-
-        </div>
         </>
     );
 };
 
 export default Gallery;
-
-function imgs(len, Component) {
-    let arr = [];
-    for(let i = 0; i < len; i++){
-        const ref = `/assets/imgs/gallery/${i+1}.png`;
-        arr.push(<Component key={i} src = { ref } />)
-    }
-
-    return arr;
-}
-
-function Img({ src }) {
-
-    const { 
-        col,
-        card
-    } = styles;
-
-    return (
-        <div className = { col }>
-
-            <div className = { card }>
-                <img src = { src } />
-            </div>
-
-        </div>
-    )
-}

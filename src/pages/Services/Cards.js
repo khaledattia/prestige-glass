@@ -7,7 +7,6 @@ import face from '@assets/imgs/services/face.png';
 
 import styles from './Services.module.css';
 
-
 export const Cards = () => {
 
     const { row, col } = styles;

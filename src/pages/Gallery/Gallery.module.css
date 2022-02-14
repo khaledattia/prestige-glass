@@ -30,6 +30,7 @@
     max-height: 577px;
     overflow: hidden;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 .card::after {
     content: '';
