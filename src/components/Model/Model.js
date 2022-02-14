@@ -24,11 +24,19 @@ export const Model = ({ status, src, set, setStatus }) => {
             };
         };
 
+        // function handleBack() {
+        //     if( status === "open" ) {
+        //         setStatus("close");
+        //     }
+        // }
+
         function handleKeydown({ key }) {
             if( status === "open" && key === "Escape" ) {
                 setStatus("close");
             };
         };
+
+        
 
         return () => {
             set("");
