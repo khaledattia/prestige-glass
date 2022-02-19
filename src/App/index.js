@@ -39,13 +39,13 @@ function App() {
         
         
 
-        <Route path = "/"           element = { <Home /> }/>
-        <Route path = "/about-us"   element = { <About /> }/>
-        <Route path = "/contact-us" element = { <Contacts /> }/>
-        <Route path = "/gallery"    element = { <Gallery /> }/>
-        <Route path = "/services"   element = { <Services /> }/>
-        <Route path = "/transactions"   element = { <Transactions /> }/>
-        <Route path = "/*"   element = { <NotFoundPage /> }/>
+        <Route path = "/"               element = { <Home /> }/>
+        <Route path = "/about-us"       element = { <About /> }/>
+        <Route path = "/contact-us"     element = { <Contacts /> }/>
+        <Route path = "/gallery"        element = { <Gallery /> }/>
+        <Route path = "/services"       element = { <Services /> }/>
+        <Route path = "/callback"   element = { <Transactions /> }/>
+        <Route path = "/*"              element = { <NotFoundPage /> }/>
       </Routes>
 
       <Footer />

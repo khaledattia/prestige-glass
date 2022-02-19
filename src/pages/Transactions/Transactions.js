@@ -29,7 +29,7 @@ import { Loader } from '@components/Loader/Loader';
 //     "source_data.type": "",
 //     "success": "",
 // }
-const PaymentResult = () => {
+const Transactions = () => {
     const [receipt, setReceipt] = useState({})
 
     const location = useLocation();
@@ -179,6 +179,6 @@ const PaymentResult = () => {
 // source_data.type
 // success
 
-export default PaymentResult;
+export default Transactions;
 
 // http://localhost:3000/callback?is_standalone_payment=true&error_occured=false&integration_id=1801946&merchant_commission=0&order=33009370&created_at=2022-02-17T09%3A44%3A43.131498&amount_cents=500000&data.message=BLOCKED&profile_id=156204&is_refunded=false&is_capture=false&is_3d_secure=true&is_voided=false&source_data.pan=2346&hmac=d02cd59229fb782c2bb18a04806e74250b38d3cc1f803bdd7e62b3caadec4b9274d9212acd0e3b5f78466759e09ea7027efdb6cc322ac2cfdb746f506e380f95&source_data.sub_type=MasterCard&pending=false&owner=285145&is_refund=false&is_auth=false&id=26733291&txn_response_code=BLOCKED&currency=EGP&refunded_amount_cents=0&has_parent_transaction=false&is_void=false&captured_amount=0&source_data.type=card&success=false
