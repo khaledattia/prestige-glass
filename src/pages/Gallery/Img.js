@@ -10,7 +10,7 @@ export const Img = ({ link, set, setStatus }) => {
     } = styles;
 
     return (
-        <div className = { col }>
+        <div className = { `${ col } animate__animated animate__fadeInUp off-set` }>
 
             <div className = { card } onClick = { ()  => {
                 set( link );

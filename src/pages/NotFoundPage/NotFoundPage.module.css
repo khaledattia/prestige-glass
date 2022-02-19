@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    color: var(--black);
+    text-align: center;
+}
+
+.text_message {
+    margin-right: 128px;
+}
+
+.wrapper h1 {
+    font-size: 95px;
+    font-family: var(--Popp);
+}
+
+.wrapper h1 + p {
+    font-size: 28px;
+    margin: 23px 0;
+    font-weight: 700;
+}
+
+.text_message p:last-child {
+    font-size: 18px;
+}
+
+.img_container {
+    max-width: 274px;
+}
+
+.img_container img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text_message {
+        margin: 0;
+    }
+}

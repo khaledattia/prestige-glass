@@ -11,7 +11,7 @@ export const Duty = () => {
     return (
 
 
-        <section className = { `${ duty_container } --container` } >
+        <section className = { `${ duty_container } --container   animate__animated animate__fadeInUp off-set` } >
 
 
 

@@ -35,8 +35,7 @@ export const Responsibilities = () => {
 const Responsibility = ({ head, text }) => {
     const { responsibility, circle, title } = styles;
     return (
-        <div className = { `${ responsibility } off-set  
-        animate__animated animate__bounceIn` }>
+        <div className = { `${ responsibility } animate__animated animate__fadeInUp off-set` }>
 
             <div className = { title } >
                 { head }

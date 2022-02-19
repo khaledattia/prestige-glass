@@ -1,5 +1,4 @@
 
-import { useEffect, useRef } from 'react';
 import { Carousel } from '@components/Carousel/Carousel';
 import { Responsibilities } from './Responsibilities/Responsibilities';
 import { WhyUs } from './WhyUs/WhyUs';
@@ -18,6 +17,7 @@ export const Home = () => {
 
     const { quality } = styles
 
+
     return (
 
         <div>
@@ -26,7 +26,6 @@ export const Home = () => {
             </header>
 
             <Responsibilities />
-            
             <WhyUs 
             dir = "right"
             h2Text       = { "لماذا نحن؟" } 
@@ -86,45 +85,17 @@ export const Home = () => {
             />
 
             <Gallery />
-            <div id="map">
+
+            <div id="map" className = 'animate__animated animate__fadeInUp off-set'>
+
                 <iframe 
+                title={`our location`}
                 src="https://maps.google.com/maps?q=كافتيريا جوهرة الملكة,giza,egypt&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
                 style = {{width: "100%", height: "400px", border: "none"}}
                 allowFullScreen />
-
             </div>
             
         </div>
         
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function MyMapComponent({ center, zoom }) {
-    const ref = useRef();
-  
-    useEffect(() => {
-
-      new window.google.maps.Map(
-        ref.current, {
-        center,
-        zoom,
-      });
-
-    });
-  
-    return <div ref={ref} id="map" />;
-  }

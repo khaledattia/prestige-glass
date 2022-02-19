@@ -21,21 +21,11 @@ export const Carousel = () => {
         carousel_items,
         text,
         animate_MoveUp,
-        animate_fad_in,
+        // animate_fad_in,
         btn_container,
         img,
         main_img
     } = styles;
-
-    // useEffect(() => {
-    //     let item = document.querySelector(`.${carousel_item}`);
-
-    //     window.addEventListener('resize', (e) => {
-    //         let width = window.innerWidth
-
-    //         if()
-    //     })
-    // }, [])
 
     // on carousel init
     useEffect(() => {
@@ -77,11 +67,11 @@ export const Carousel = () => {
         // remove pervious active item;
         listItems.forEach(el => {
             if(el.classList.contains(`${active}`)) el.classList.remove(`${ active }`);
-        })
+        });
 
         listItems[current].classList.add(`${ active }`);
 
-     }, [ current, active, carousel_item, carousel ]);
+    }, [ current, active, carousel_item, carousel ]);
 
 
 
@@ -280,9 +270,6 @@ export const Carousel = () => {
 
             </ul>
 
-            {/* <div className="">
-
-            </div> */}
         </div>
     );
 };

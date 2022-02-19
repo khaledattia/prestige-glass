@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 @font-face {
   font-family: bona;
   src: url('./assets/fonts/BonaNova-Regular.ttf');
@@ -23,6 +25,7 @@
   --text-2: rgb(196,196,196);
   --text-1: rgb(93,93,93);
   --border: rgb(196,196,196);
+  --Popp: 'Poppins', sans-serif;
 }
 
 ::-moz-selection,

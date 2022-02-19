@@ -37,7 +37,7 @@ const About = () => {
 
                         <br /><br />
                         
-                    <div style={{ textAlign: "right" }}>:بعض عملائنا</div>
+                    <span style={{ textAlign: "right", display: "block" }}>:بعض عملائنا</span>
                         البنك العربى الافريقى -
                         البنك الاهلى المصرى -
                         سيراميكا كليوباترا -

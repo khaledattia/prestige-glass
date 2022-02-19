@@ -1,0 +1,133 @@
+
+
+/* page style */
+/* card style */
+
+
+.payment_status_page {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 100000;
+}
+
+
+
+
+
+
+
+
+
+
+.note {
+    transform: translate(-150%);
+    animation: Rightmove 400ms 1500ms cubic-bezier(1.000, -0.445, 0.150, 1.455) forwards;
+}
+
+/* card style */
+._card {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+
+    background: #fff;
+    border-radius: 15px;
+    padding: 32px 28px;
+    font-family: var(--Popp);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+._card .card_head {
+    margin-bottom: 10px;
+}
+
+._card h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+
+}
+
+._card h2 + div {
+    text-align: center;
+    font-size: 80px;
+}
+
+
+._card .row ,
+._card .amount{
+    display: flex;
+    font-size: 0.875rem;
+    color: var(--text-1);
+    margin-bottom: 10px;
+
+}
+
+._card .row p:nth-child(1), 
+._card .amount p:nth-child(1) {
+    margin-right: auto;
+}
+
+._card .amount {
+    font-size: 20px;
+    margin: 6px 0;
+}
+
+._card .amount p:nth-child(2){
+    color: var(--black);
+}
+
+.btn_wrapper {
+    text-align: center;
+}
+
+._card .btn {
+    background: #1A56CA;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 12px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    transition: background 200ms ease-in-out;
+    width: 100%;
+}
+
+._card .btn:hover {
+    background: #1a55cadb;
+}
+@media (min-width: 577px) {
+    ._card {
+        width: 455px;
+    }
+    
+}
+@media (max-width: 576px) {
+    ._card {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transform: translate(0, 0);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+@keyframes Rightmove {
+    0% {
+        transform: translateX(-150%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}

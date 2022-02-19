@@ -35,7 +35,7 @@ export const Gallery = () => {
                     </span>
                 </h2>
 
-                <div className = { imgs } >
+                <div className = { `${ imgs } animate__animated animate__fadeInUp off-set` } >
                     <div 
                     className = { img } 
                     onClick   = { () => {

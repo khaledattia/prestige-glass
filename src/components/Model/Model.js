@@ -11,6 +11,7 @@ export const Model = ({ status, src, set, setStatus }) => {
     } = styles;
 
     useEffect(()=> {
+        document.querySelector("body").style.overflow = "hidden";
         const _model = document.querySelector(`.${ model }`);
 
         _model.addEventListener("click", handleClick);
@@ -42,6 +43,7 @@ export const Model = ({ status, src, set, setStatus }) => {
             set("");
             _model.removeEventListener("click", handleClick);
             document.removeEventListener("keydown", handleKeydown);
+            document.querySelector("body").style.overflow = "visible";
         };
     });
 

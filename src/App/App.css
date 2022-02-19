@@ -54,3 +54,7 @@
 .numb {
     font-family: var(--cairo);
 }
+
+.danger {
+    color: #f66;
+}

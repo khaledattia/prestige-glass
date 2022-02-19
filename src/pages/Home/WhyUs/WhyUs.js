@@ -55,7 +55,7 @@ export const WhyUs = ({
             <div className = { wrapper }>
                 <div className = { cards }>
 
-                    <div className = { card }>
+                    <div className = { `${ card } animate__animated animate__fadeInUp off-set` }>
                         <span className = { icon }>
                             { icon_01 }    
                         </span>
@@ -69,7 +69,7 @@ export const WhyUs = ({
                         </p>
                     </div>
 
-                    <div className = { `${ card } decorate_relative top_decoration` }  >
+                    <div className = { `${ card } decorate_relative top_decoration animate__animated animate__fadeInUp off-set` }  >
                         <span className = {`bottom_decoration ${ icon }`}>
                             { icon_02 }    
                         </span>
@@ -83,7 +83,7 @@ export const WhyUs = ({
                         </p>
                     </div>
 
-                    <div className = { card }  >
+                    <div className = { `${ card }  animate__animated animate__fadeInUp off-set` }  >
                         <span className = { icon }>
                             { icon_03 }    
                         </span>
