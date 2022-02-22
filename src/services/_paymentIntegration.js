@@ -118,7 +118,7 @@ async function getPaymentKey(cud, set) {
                 'Content-Type': 'application/json'
             }
         })
-        .then(res => {console.log("status: ",res.status); return res.json()})
+        .then(res => res.json())
         
         console.log("initailizing payment Key is done!");
         return paymentKey;

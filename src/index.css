@@ -34,6 +34,14 @@
   background: var(--golden);
 }
 
+button.slick-arrow {
+  display: none!important;
+}
+
+.slick-dots {
+  display: none!important;
+}
+
 html, body,
 *,*::after,*::before {
   box-sizing: border-box;
@@ -44,9 +52,11 @@ html, body,
 ul {
   list-style: none;
 }
+
 a{
   color: #000;
 }
+
 a, a:hover {
   text-decoration: none;
 }

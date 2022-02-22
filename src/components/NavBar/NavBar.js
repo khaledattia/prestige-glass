@@ -85,16 +85,16 @@ export const NavBar = () => {
                         </span>
                     </div>
 
-                    <div 
-                    onClick = { () => setActiveForm(true) }
+                    <Link 
+                    to = "payment-methods" 
                     className = { payment_link } 
                     role = "button">
-                        <p>ديل اونلاين</p>
+                        <p>طرق الدفع</p>
 
                         <div style={{ display: "flex", marginLeft: "0.5rem" }}>
                             <BsCreditCard2Back />
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className = { `${ main_nav } --container` }>

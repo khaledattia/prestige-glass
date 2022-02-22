@@ -3,32 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Card } from './Card';
 import styles from './Transactions.module.css';
 import { Loader } from '@components/Loader/Loader';
-// import sha256  from "crypto-js/sha256";
-// import hmacSHA512 from 'crypto-js/hmac-sha512';
-// import hex from 'crypto-js/enc-hex';
 
-// const mainKeys = {
-//     "amount_cents": "",
-//     "created_at": "",
-//     "currency": "",
-//     "error_occured": "",
-//     "has_parent_transaction": "",
-//     "id": "",
-//     "integration_id": "",
-//     "is_3d_secure": "",
-//     "is_auth": "",
-//     "is_capture": "",
-//     "is_refunded": "",
-//     "is_standalone_payment": "",
-//     "is_voided": "",
-//     "order.id": "",
-//     "owner": "",
-//     "pending": "",
-//     "source_data.pan": "",
-//     "source_data.sub_type": "",
-//     "source_data.type": "",
-//     "success": "",
-// }
 const Transactions = () => {
     const [receipt, setReceipt] = useState({})
 

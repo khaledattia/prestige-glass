@@ -1,0 +1,144 @@
+
+
+
+
+
+.tabel_wrapper {
+    overflow-X: auto;
+    width: 100%;
+    position: relative;
+
+}
+.container {
+    padding: 5rem;
+}
+.headline {
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    font-family: var(--cairo);
+    user-select: none;
+}
+
+table {
+    width: 100%;
+}
+
+.sticky_row {
+    position: sticky;
+    left: 0;
+    background: #fff;
+}
+
+tr:hover td {
+    background: #cdcdcd3c;
+}
+
+table th,
+table td {
+    border: 1px solid #CDCDCD;
+    min-width: 5rem;
+    text-align: center;
+    padding: 0.128rem 0;
+    user-select: none;
+    font-family: var(--Popp);
+    transition: all 300ms ease-in-out;
+}
+
+
+
+/* ------- sliders --------*/
+
+.img_container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.img_container img {
+    height: 100%;
+    opacity: 0.75;
+}
+
+
+/* payments */
+
+.online_pay {
+    display: flex;
+    margin-bottom:  5rem;
+
+}
+
+.img_wrapper {
+    max-width: 500px;
+    margin-right: auto;
+}
+.img_wrapper + div{
+    text-align: right;
+}
+.img_wrapper img {
+    width: 100%;
+}
+
+.online_pay h2,
+.pos_pay h2 {
+    text-align: center;
+    font-family: var(--cairo);
+    margin-bottom: 1rem;
+    color: #4278bb;
+}
+
+.online_pay h2 + p {
+    line-height: 25px;
+}
+.pos_pay {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pos_pay .img_wrapper {
+    margin: 0;
+}
+
+.pos_pay .img_wrapper + div {
+    margin-right: auto;
+}
+
+.card {
+    max-width: 400px;
+    padding: 1rem;
+    border: 2px solid var(--golden);
+    border-radius: 15px;
+    box-shadow: 10px 10px 0 0 var(--golden);
+    align-self: flex-start;
+}
+
+.pos_pay p {
+    text-align: right;
+    line-height: 25px;
+}
+
+.slider_wrapper {
+    margin: 5rem 0;
+}
+
+@media ( max-width: 992px ) {
+    .pos_pay, .online_pay {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .pos_pay .img_wrapper + div {
+        margin: 0 auto 4rem;
+    }
+
+    .img_wrapper {
+        margin: 0;
+    }
+    .img_wrapper + div{
+        margin: 0 auto 4rem;
+    }
+}
