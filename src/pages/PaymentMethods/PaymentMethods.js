@@ -4,6 +4,7 @@ import { InstallmentTable } from './InstallmentTable';
 import Slider from "react-slick";
 import { settings } from './sliderSettings';
 import styles from './PaymentMethods.module.css';
+import paymentImg from "@assets/imgs/paymentMethods.png"
 import { Rerousel } from 'rerousel';
 import img_1 from '../../assets/imgs/payment/banks/001.png';
 import img_2 from '../../assets/imgs/payment/banks/002.gif';
@@ -35,6 +36,9 @@ const PaymentMethods = function () {
 
 
         <div className = {`--container ${ container }`}>
+            <div style={{textAlign:"center", paddingBottom:"2rem"}}>
+            <img src = { paymentImg } alt = "payment" />
+            </div>
             <div className = { online_pay }>
                 <div className = { img_wrapper }>
                     <img src = { paymob } alt = "paymob logo"/>
