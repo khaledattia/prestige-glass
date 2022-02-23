@@ -1,7 +1,10 @@
+
+import { useRef } from 'react';
 import { InstallmentTable } from './InstallmentTable'; 
 import Slider from "react-slick";
 import { settings } from './sliderSettings';
 import styles from './PaymentMethods.module.css';
+import { Rerousel } from 'rerousel';
 import img_1 from '../../assets/imgs/payment/banks/001.png';
 import img_2 from '../../assets/imgs/payment/banks/002.gif';
 import img_3 from '../../assets/imgs/payment/banks/003.png';
@@ -16,7 +19,7 @@ import pos from '../../assets/imgs/payment/pos.png';
 
 
 const PaymentMethods = function () {
-
+    const sliderRef = useRef(null);
 
     const { 
         img_container, 
@@ -25,7 +28,8 @@ const PaymentMethods = function () {
         img_wrapper, 
         slider_wrapper,
         card,
-        container
+        container,
+        slide
     } = styles;
     return (
 
@@ -54,9 +58,7 @@ const PaymentMethods = function () {
                     <h2>POS الدفع عن طريق الـ</h2>
                     <p></p>
                     <p>
-                        تقدر تدفع عن طريق الـ  او
-                        من خلال مندوبنا بيوصلك لاى مكان داخل القاهرة و الجيزة 
-                        او ممكن من خلال احد فرعنا
+                        تقدر تدفع من خلال احد فرعنا او من خلال مندوب يوصلك اى مكان داخل القاهرة و الجيزة
                     </p>
                 </div>
 
@@ -65,7 +67,39 @@ const PaymentMethods = function () {
 
             <InstallmentTable />
             <div className = { slider_wrapper }>
-            
+
+            {/* <Rerousel itemRef = { sliderRef } interval = { 3000 }>
+                <div className = { slide } ref = { sliderRef }>
+                    <div className = { img_container }>
+                        <img src = { img_1 } alt = "audi" />
+                    </div>
+                </div>
+
+                <div className = { slide } ref = { sliderRef }>
+                    <div className = { img_container }>
+                        <img src = { img_2 } alt = "audi" />
+                    </div>
+                </div>
+
+                <div className = { slide } ref = { sliderRef }>
+                    <div className = { img_container }>
+                        <img src = { img_3 } alt = "audi" />
+                    </div>
+                </div>
+
+                <div className = { slide } ref = { sliderRef }>
+                    <div className = { img_container }>
+                        <img src = { img_4 } alt = "audi" />
+                    </div>
+                </div>
+
+                <div className = { slide } ref = { sliderRef }>
+                    <div className = { img_container }>
+                        <img src = { img_5 } alt = "audi" />
+                    </div>
+                </div>
+
+            </Rerousel> */}
                 <Slider {...settings} >
                     <div>
                         <div className = { img_container }>
