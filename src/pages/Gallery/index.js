@@ -34,7 +34,7 @@ const Gallery = () => {
             <div className = { galley_container } >
                 <div  className = { row } >
 
-                    { map(42, ( link, i ) => (
+                    { map(79, ( link, i ) => (
                         <Img 
                         key       = { i } 
                         link      = { link } 
