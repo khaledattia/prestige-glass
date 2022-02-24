@@ -106,9 +106,9 @@ footer {
 
 .brief .intro {
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
-
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .intro p {
@@ -134,7 +134,6 @@ footer {
 .intro .__logo {
     width: 100px;
     margin-left: 0.875rem;
-    margin-bottom: 0.875rem;
     height: 78px;
 }
 

@@ -12,11 +12,9 @@ export const Brief = () => {
     return (
         <div className = { brief }>
             <div className = { intro }>
-                <p>
+                <p style={{order: "1"}}>
                     شركة برستيج جلاس اختيارك
                     للزجاج الافضل. معك لتعكس ذوقك
-                    فى المطاعم، الفنادق، المكاتب
-                    و المنازل
                 </p>
 
                 <div className = { __logo }>
