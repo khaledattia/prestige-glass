@@ -1,11 +1,10 @@
 
-import { useRef } from 'react';
 import { InstallmentTable } from './InstallmentTable'; 
 import Slider from "react-slick";
 import { settings } from './sliderSettings';
 import styles from './PaymentMethods.module.css';
 import paymentImg from "@assets/imgs/paymentMethods.png"
-import { Rerousel } from 'rerousel';
+
 import img_1 from '../../assets/imgs/payment/banks/001.png';
 import img_2 from '../../assets/imgs/payment/banks/002.gif';
 import img_3 from '../../assets/imgs/payment/banks/003.png';
@@ -20,7 +19,6 @@ import pos from '../../assets/imgs/payment/pos.png';
 
 
 const PaymentMethods = function () {
-    const sliderRef = useRef(null);
 
     const { 
         img_container, 
@@ -30,15 +28,29 @@ const PaymentMethods = function () {
         slider_wrapper,
         card,
         container,
-        slide
     } = styles;
     return (
 
 
         <div className = {`--container ${ container }`}>
             <div style={{textAlign:"center", paddingBottom:"2rem"}}>
-            <img src = { paymentImg } alt = "payment" />
+                <img src = { paymentImg } alt = "payment" />
             </div>
+
+
+
+
+            <div className = { card } style = {{ margin:"auto", marginBottom: "2.5rem" }}>
+                    <h2 style = {{ textAlign: "center", 
+                    color: "#4278bb", 
+                    fontFamily: "cairo",
+                    marginBottom: "0.875rem" }}>نوفر خدمة التقسيط</h2>
+                    <p style = {{ textAlign: "right", lineHeight:"25px" }}>
+                        يمكنك تيقسط اى مبلغ حسب طلبك و المدة التى ترغب بها
+                        
+                    </p>
+                </div>
+
             <div className = { online_pay }>
                 <div className = { img_wrapper }>
                     <img src = { paymob } alt = "paymob logo"/>
@@ -71,39 +83,6 @@ const PaymentMethods = function () {
 
             <InstallmentTable />
             <div className = { slider_wrapper }>
-
-            {/* <Rerousel itemRef = { sliderRef } interval = { 3000 }>
-                <div className = { slide } ref = { sliderRef }>
-                    <div className = { img_container }>
-                        <img src = { img_1 } alt = "audi" />
-                    </div>
-                </div>
-
-                <div className = { slide } ref = { sliderRef }>
-                    <div className = { img_container }>
-                        <img src = { img_2 } alt = "audi" />
-                    </div>
-                </div>
-
-                <div className = { slide } ref = { sliderRef }>
-                    <div className = { img_container }>
-                        <img src = { img_3 } alt = "audi" />
-                    </div>
-                </div>
-
-                <div className = { slide } ref = { sliderRef }>
-                    <div className = { img_container }>
-                        <img src = { img_4 } alt = "audi" />
-                    </div>
-                </div>
-
-                <div className = { slide } ref = { sliderRef }>
-                    <div className = { img_container }>
-                        <img src = { img_5 } alt = "audi" />
-                    </div>
-                </div>
-
-            </Rerousel> */}
                 <Slider {...settings} >
                     <div>
                         <div className = { img_container }>

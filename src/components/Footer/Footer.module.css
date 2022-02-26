@@ -129,6 +129,7 @@ footer {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
     color: #fff;
     cursor: default;
+    
 }
 
 .intro .__logo {
@@ -145,6 +146,14 @@ footer {
     display: flex;
     justify-content: flex-end;
 
+}
+
+.num {
+    font-family: var(--Popp);
+    font-size: 0.75rem;
+    display: flex;
+    margin-top: 0.25rem;
+    justify-content: flex-end;
 }
 
 .brief .social a {

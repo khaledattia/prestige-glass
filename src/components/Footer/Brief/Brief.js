@@ -6,15 +6,16 @@ import styles from '../Footer.module.css';
 
 export const Brief = () => {
 
-    const { brief, __logo, social , intro } = styles;
+    const { brief, __logo, social , intro, num } = styles;
 
 
     return (
         <div className = { brief }>
             <div className = { intro }>
                 <p style={{order: "1"}}>
-                    شركة برستيج جلاس اختيارك
-                    للزجاج الافضل. معك لتعكس ذوقك
+                    شركة برستيج جلاس بي اي اختيارك
+                    للزجاج الافضل. معك لتعكس ذوقك<br />
+                     <span class = { num } >329-557-378 الرقم الضريبى</span>
                 </p>
 
                 <div className = { __logo }>

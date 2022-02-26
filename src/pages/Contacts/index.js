@@ -32,7 +32,8 @@ export const ContactsInfo = () => {
         map_wrapper, 
         contacts,
         contact_wrapper,
-        span
+        span,
+        fix
     } = styles;
 
     return (
@@ -54,7 +55,7 @@ export const ContactsInfo = () => {
                     label = { "العنوان" } 
                     icon  = { <BsPinMapFill /> } />
                     <div className = { span }>
-                        <a style={{display: "flex"}} href='https://www.google.com/maps?ll=30.018997,31.192131&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=5753353574757392182'>
+                        <a className = { fix } href='https://www.google.com/maps?ll=30.018997,31.192131&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=5753353574757392182'>
                             محور جمال عبد الناصر - فيصل، الجيزة <span style={{marginLeft: "0.25rem"}}>34</span>
                         </a>
                     </div>
