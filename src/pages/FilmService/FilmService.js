@@ -23,6 +23,7 @@ import pe4 from "@assets/imgs/films/pe4.jpg";
 export default function FilmService() {
   return (
     <>
+      <h2 className="family-cairo text-center py-4">Wellcool افلام الديكور, الحرارة والحماية بالتعاون مع شركة</h2>
       <Section
         img={sec1}
         parag={<DecorParag />}

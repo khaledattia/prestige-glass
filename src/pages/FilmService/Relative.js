@@ -18,8 +18,8 @@ export default function Relative(props) {
       <div className={bg} style={{ background }}>
         <h2 style={{color: titleColor}} className="mb-5 mt-2 family-cairo">{title}</h2>
         <div className={relative + " flex wrap "}>
-          {imgs.map((img) => (
-            <div className={rel_img}>
+          {imgs.map((img, i) => (
+            <div key = {i} className={rel_img}>
               <img
                 src={img}
                 alt="specofocation"

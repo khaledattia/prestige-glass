@@ -145,6 +145,10 @@ code {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.py-4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pr-5 {
   padding-right: 2.5rem;
 }
@@ -153,6 +157,9 @@ code {
 }
 .order-1-rev {
   order: -1;
+}
+.text-center {
+  text-align: center;
 }
 
 @media (min-width: 840px) {
