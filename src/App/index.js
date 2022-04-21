@@ -4,28 +4,25 @@
 // import { Gallery } from '@pages/Home/Gallery/Gallery';
 // import { Duty } from '@pages/Home/Duty/Duty';
 
-import { Routes, Route } from 'react-router-dom'
-import { Home } from '@pages/Home';
-import About from '@pages/About';
-import Contacts from '@pages/Contacts';
-import Gallery from '@pages/Gallery';
-import Services from '@pages/Services';
-import NotFoundPage from '@pages/NotFoundPage/NotFoundPage'
-import PaymentMethods from '@pages/PaymentMethods/PaymentMethods';
+import { Routes, Route } from "react-router-dom";
+import { Home } from "@pages/Home";
+import About from "@pages/About";
+import Contacts from "@pages/Contacts";
+import Gallery from "@pages/Gallery";
+import Services from "@pages/Services";
+import NotFoundPage from "@pages/NotFoundPage/NotFoundPage";
+import PaymentMethods from "@pages/PaymentMethods/PaymentMethods";
+import FilmService from "@pages/FilmService/FilmService";
 
-import { NavBar }  from '@components/NavBar/NavBar';
-import { Footer }  from '@components/Footer/Footer';
-import ScrollInit from '@components/ScrollInit';
-import { Animation } from '../utils/hooks/Animation';
-import { ScrollToTop } from '@components/ScrollToTop/ScrollToTop';
-import './App.css'; 
-import { AsideSocial } from '@components/AsideSocial/AsideSocial';
+import { NavBar } from "@components/NavBar/NavBar";
+import { Footer } from "@components/Footer/Footer";
+import ScrollInit from "@components/ScrollInit";
+import { Animation } from "../utils/hooks/Animation";
+import { ScrollToTop } from "@components/ScrollToTop/ScrollToTop";
+import "./App.css";
+import { AsideSocial } from "@components/AsideSocial/AsideSocial";
 function App() {
-  
-
   return (
-    
-
     <>
       <ScrollToTop />
       <AsideSocial />
@@ -34,14 +31,14 @@ function App() {
       <NavBar />
 
       <Routes>
-
-        <Route path = "/"                  element = { <Home /> }/>
-        <Route path = "/about-us"          element = { <About /> }/>
-        <Route path = "/contact-us"        element = { <Contacts /> }/>
-        <Route path = "/gallery"           element = { <Gallery /> }/>
-        <Route path = "/services"          element = { <Services /> }/>
-        <Route path = "/payment-methods"   element = { <PaymentMethods /> }/>
-        <Route path = "/*"                 element = { <NotFoundPage /> }/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/contact-us" element={<Contacts />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/payment-methods" element={<PaymentMethods />} />
+        <Route path="/films-service" element={<FilmService />} />
+        <Route path="/*" element={<NotFoundPage />} />
       </Routes>
 
       <Footer />

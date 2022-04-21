@@ -1,6 +1,6 @@
 import styles from './Responsibilities.module.css';
 
-
+import video_promo from "@assets/videos/promo.mp4";
 
 export const Responsibilities = () => {
 
@@ -26,7 +26,9 @@ export const Responsibilities = () => {
                 ندرس ما نعمل عليه و نصممه
                 باحترافية لتقديم ما يسعدك دائما
             ` } />
-
+            <video  title="promo" width="100%" controls style={{ marginTop: "5rem" }}>
+                <source src={ video_promo } type="video/mp4"></source>
+            </video>
         </section>
     );
 };

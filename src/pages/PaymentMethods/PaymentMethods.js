@@ -40,16 +40,19 @@ const PaymentMethods = function () {
 
 
 
-            <div className = { card } style = {{ margin:"auto", marginBottom: "2.5rem" }}>
-                    <h2 style = {{ textAlign: "center", 
-                    color: "#4278bb", 
-                    fontFamily: "cairo",
-                    marginBottom: "0.875rem" }}>نوفر خدمة التقسيط</h2>
-                    <p style = {{ textAlign: "right", lineHeight:"25px" }}>
-                        يمكنك تيقسط اى مبلغ حسب طلبك و المدة التى ترغب بها
-                        
-                    </p>
-                </div>
+                <a href='#installment'>
+                    <div className = { card } style = {{ margin:"auto", marginBottom: "2.5rem" }}>
+
+                        <h2 style = {{ textAlign: "center", 
+                        color: "#4278bb", 
+                        fontFamily: "cairo",
+                        marginBottom: "0.875rem" }}>نوفر خدمة التقسيط</h2>
+                        <p style = {{ textAlign: "right", lineHeight:"25px" }}>
+                            يمكنك تيقسط اى مبلغ حسب طلبك و المدة التى ترغب بها
+                            
+                        </p>
+                    </div>
+                </a>
 
             <div className = { online_pay }>
                 <div className = { img_wrapper }>

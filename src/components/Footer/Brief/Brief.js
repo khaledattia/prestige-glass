@@ -15,11 +15,11 @@ export const Brief = () => {
                 <p style={{order: "1"}}>
                     شركة برستيج جلاس بي اي اختيارك
                     للزجاج الافضل. معك لتعكس ذوقك<br />
-                     <span class = { num } >329-557-378 الرقم الضريبى</span>
+                     <span className = { num } >329-557-378 الرقم الضريبى</span>
                 </p>
 
                 <div className = { __logo }>
-                    <img src = { logo } />
+                    <img src = { logo } alt = "logo" />
                 </div>
             </div>
 

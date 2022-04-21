@@ -23,7 +23,7 @@
 
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .btn_close {

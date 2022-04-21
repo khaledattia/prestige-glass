@@ -1,31 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 @font-face {
   font-family: bona;
-  src: url('./assets/fonts/BonaNova-Regular.ttf');
+  src: url("./assets/fonts/BonaNova-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: bona;
-  src: url('./assets/fonts/BonaNova-Bold.ttf');
+  src: url("./assets/fonts/BonaNova-Bold.ttf");
   font-weight: 600;
 }
 
 :root {
   --bona-nova: bona, serif;
-  --cairo: 'Cairo', sans-serif;
-  --black: rgb(13,13,13);
-  --dark: rgb(35,35,35);
-  --darker: rgb(24,24,24);
+  --cairo: "Cairo", sans-serif;
+  --black: rgb(13, 13, 13);
+  --dark: rgb(35, 35, 35);
+  --darker: rgb(24, 24, 24);
   /* --golden: rgb(203,161,53); */
   --golden: rgb(255, 102, 0);
   --light-golden: rgb(255, 102, 0);
   /* --light-golden: rgb(255,204,51); */
-  --text-2: rgb(196,196,196);
-  --text-1: rgb(93,93,93);
-  --border: rgb(196,196,196);
-  --Popp: 'Poppins', sans-serif;
+  --text-2: rgb(196, 196, 196);
+  --text-1: rgb(93, 93, 93);
+  --border: rgb(196, 196, 196);
+  --Popp: "Poppins", sans-serif;
 }
 
 ::-moz-selection,
@@ -35,15 +35,18 @@
 }
 
 button.slick-arrow {
-  display: none!important;
+  display: none !important;
 }
 
 .slick-dots {
-  display: none!important;
+  display: none !important;
 }
 
-html, body,
-*,*::after,*::before {
+html,
+body,
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -53,29 +56,120 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   color: #000;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
 body {
-  font-family: var(--bona-nova), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--bona-nova), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .display--none {
   visibility: hidden;
   animation-name: unset;
+}
+
+/* ----------------------- */
+/* Style System */
+/* ------------------------ */
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.content-center {
+  justify-content: center;
+}
+.content-right {
+  justify-content: right;
+}
+.space-between {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.ml-2 {
+  margin-left: 1rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mb-2 {
+  margin-bottom: 1rem;
+}
+.mb-5 {
+  margin-bottom: 2.5rem;
+}
+.ml-5 {
+  margin-left: 2.5rem;
+}
+.mr-5 {
+  margin-right: 2.5rem;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.text-right {
+  text-align: right;
+}
+.pr-2 {
+  padding-right: 1rem;
+}
+.pb-2 {
+  padding-bottom: 1rem;
+}
+.pl-2 {
+  padding-left: 1rem;
+}
+.px-2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.pr-5 {
+  padding-right: 2.5rem;
+}
+.family-cairo {
+  font-family: var(--cairo);
+}
+.order-1-rev {
+  order: -1;
+}
+
+@media (min-width: 840px) {
+  .content-lg-center {
+    justify-content: center;
+  }
+  .flex-md-1 {
+    flex-grow: 1;
+    width: 50%;
+  }
+}
+
+@media (max-width: 840px) {
+  .order-md-1 {
+    order: 1;
+  }
+  .content-md-right {
+    justify-content: right;
+  }
 }
