@@ -23,12 +23,10 @@ import pe4 from "@assets/imgs/films/pe4.jpg";
 export default function FilmService() {
   return (
     <> 
-      <h2 dir="rtl" className="family-cairo text-center py-4 flex wrap">  افلام الديكور, الحرارة والحماية بالتعاون مع شركة wellcool</h2>
-      <Section
-        img={sec1}
-        parag={<DecorParag />}
-        title="افلام الديكور و الطباعة"
-      />
+      <h2 dir="rtl" className="family-cairo text-center py-4">  افلام الديكور, الحرارة والحماية بالتعاون مع شركة wellcool</h2>
+      
+      <Section img={sec3} parag={<SecureParag />} title="افلام الحمايــه" />
+      
       <Section
         img={sec2}
         parag={<TempParag />}
@@ -40,7 +38,11 @@ export default function FilmService() {
         background="rgba(0, 0, 0, 0.16)"
         imgs={[film1, film2, film3, film4]}
       />
-      <Section img={sec3} parag={<SecureParag />} title="افلام الحمايــه" />
+      <Section
+        img={sec1}
+        parag={<DecorParag />}
+        title="افلام الديكور و الطباعة"
+      />
       <Relative
         title="(SF-100) - (SF-200)"
         background="rgba(0, 0, 0, 0.16)"

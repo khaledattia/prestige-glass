@@ -139,7 +139,7 @@ export const NavBar = () => {
                             <li className = {`${ link } 
                             ${ activePage === '/films-service' ? active : '' }`} 
                             onClick = { () => setshow( prev => !prev )} > 
-                                <Link to = "/films-service"> خدما اخرى </Link> 
+                                <Link to = "/films-service"> خدمات الافلام و الاستيكرات </Link> 
                             </li>
 
                             <li className = {`${ link } 
