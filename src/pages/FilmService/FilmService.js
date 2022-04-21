@@ -9,14 +9,16 @@ import film1 from "@assets/imgs/films/A1.png";
 import film2 from "@assets/imgs/films/A2.png";
 import film3 from "@assets/imgs/films/A3.png";
 import film4 from "@assets/imgs/films/A4.png";
+
 // ---------------
 import safty100 from "@assets/imgs/films/safty100.png";
 import safty200 from "@assets/imgs/films/safty200.png";
+
 // ---------------
-import pe1 from "@assets/imgs/films/pe1.jpeg";
-import pe2 from "@assets/imgs/films/pe2.jpeg";
-import pe3 from "@assets/imgs/films/pe3.jpeg";
-import pe4 from "@assets/imgs/films/pe4.jpeg";
+import pe1 from "@assets/imgs/films/pe1.jpg";
+import pe2 from "@assets/imgs/films/pe2.jpg";
+import pe3 from "@assets/imgs/films/pe3.jpg";
+import pe4 from "@assets/imgs/films/pe4.jpg";
 
 export default function FilmService() {
   return (

@@ -330,6 +330,10 @@
         transition-delay: calc(4 * var(--delay) );
     }
 
+    .link:nth-child(6) {
+        transition-delay: calc(5 * var(--delay) );
+    }
+
     .animate .link {
         opacity: 1;
         transform: translateX(0);

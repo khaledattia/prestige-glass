@@ -42,7 +42,7 @@ export const NavBar = () => {
     const [activePage, setActivePage] = useState();
 
     useEffect(() => {
-        const menu = document.querySelector(`#menu`)
+        // const menu = document.querySelector(`#menu`)
         
         const handleEscape = ({ key }) => {
             if( key === "Escape" && show) {
@@ -134,6 +134,12 @@ export const NavBar = () => {
                             ${ activePage === '/services' ? active : '' }`} 
                             onClick = { () => setshow( prev => !prev )} > 
                                 <Link to = "/services"> خدماتنا </Link> 
+                            </li>
+
+                            <li className = {`${ link } 
+                            ${ activePage === '/services' ? active : '' }`} 
+                            onClick = { () => setshow( prev => !prev )} > 
+                                <Link to = "/films-service"> خدما اخرى </Link> 
                             </li>
 
                             <li className = {`${ link } 
